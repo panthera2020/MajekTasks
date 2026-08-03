@@ -59,7 +59,7 @@ public class StatisticsCalculator{
 		int median = 0;
 
 		if(numbers.length % 2 != 0){
-			median = arrayofNumbersInDescendingNumbers[(numbers.length - 1) / 2];
+			median = arrayofNumbersInDescendingNumbers[((numbers.length + 1) / 2) - 1];
 		}else if(numbers.length % 2 == 0){
 			median = (arrayofNumbersInDescendingNumbers[(numbers.length / 2) - 1] + arrayofNumbersInDescendingNumbers[(numbers.length) / 2]) / 2;
 		}
