@@ -1,0 +1,7 @@
+Question 24
+
+An if/else statement evaluates a single condition to choose between two paths,
+An if/else if/else chsin evaluates multiple condution to choose one path out of many. 
+
+if else is used in single conditions like yes or no, true or false
+if/else if/else helps choose from multiple choices

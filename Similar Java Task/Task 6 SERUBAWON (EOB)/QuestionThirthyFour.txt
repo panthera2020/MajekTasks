@@ -1,0 +1,4 @@
+Question 34
+
+== is used to compare integers
+.equals() is used to compare strings

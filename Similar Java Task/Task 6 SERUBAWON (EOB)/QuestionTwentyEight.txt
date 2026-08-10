@@ -1,0 +1,12 @@
+Question 28
+
+it'll produce a logic error because the logic is wrong, because the while theres a true statement, there's no opposite of the boolean expression
+
+Correct
+int x = 10;
+
+if(){
+    System.out.println("Ten");
+}else{
+    System.out.println("Not Ten");
+}

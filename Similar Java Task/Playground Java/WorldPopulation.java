@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class WorldPopulation{
+	public static void main(String[]args){
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Enter Population: ");
+		int population = input.nextInt();
+
+		System.out.print("Enter Annual Growth Rate: ");
+		int growthRate = input.nextInt();
+
+		int populationGrowth = (population * growthRate) / 100;
+		int populationIncrease1 = population + populationGrowth;
+
+		int populationGrowth2 = (populationIncrease1 * growthRate) / 100;
+		int populationIncrease2 = populationIncrease1 + populationGrowth2;
+
+		int populationGrowth3 = (populationIncrease2 * growthRate) / 100;
+		int populationIncrease3 = populationIncrease2 + populationGrowth3;
+
+		int populationGrowth4 = (populationIncrease3 * growthRate) / 100;
+		int populationIncrease4 = populationIncrease3 + populationGrowth4;
+
+		int populationGrowth5 = (populationIncrease4 * growthRate) / 100;
+		int populationIncrease5 = populationIncrease4 + populationGrowth5;
+
+			System.out.printf("The estimated population after 1 year is %d%n", populationIncrease1);
+			System.out.printf("The estimated population after 2 years is %d%n", populationIncrease2);
+			System.out.printf("The estimated population after 3 years is %d%n", populationIncrease3);
+			System.out.printf("The estimated population after 4 years is %d%n", populationIncrease4);
+			System.out.printf("The estimated population after 5 years is %d%n", populationIncrease5);
+  }
+}

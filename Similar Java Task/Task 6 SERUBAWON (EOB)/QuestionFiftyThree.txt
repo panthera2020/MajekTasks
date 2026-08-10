@@ -1,0 +1,21 @@
+Question 53
+
+Infinte loop is when a loop does not end due to the fact that there's no point at which the Boolean expression is false and the loop is continuously true 
+
+
+infinity loop example
+count = 1;
+
+while(count >100){
+	System.out.print(count);
+	counter++;
+}
+
+correction
+count = 1;
+
+while(count <= 100){
+	System.out.print(count);
+	counter++;
+}
+

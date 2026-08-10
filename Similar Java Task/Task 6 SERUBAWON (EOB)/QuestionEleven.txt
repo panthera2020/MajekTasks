@@ -1,0 +1,4 @@
+Question 11
+
+The error will be a SYNTAX ERROR because the data type double is used for integers
+ and also the variable price and tax are not declared as integers so it reads them as strings which contradicts what should be in the double data type.

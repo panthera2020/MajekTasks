@@ -1,0 +1,10 @@
+Question 69
+
+Initialization: is giving the first value to the counter of the iteration before the program runs]
+Condition: This is the condition needed for the iteration to end
+Update: this is the increment of the loop
+
+
+If the condition is always true we get an infinite loop
+
+If the condition is false from the start the loop doesn't start

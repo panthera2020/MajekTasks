@@ -1,0 +1,5 @@
+Question (9)
+Tracing through the sequence;
+firstNumber = 8
+secondNumber = 30
+thirdNumber = 10 

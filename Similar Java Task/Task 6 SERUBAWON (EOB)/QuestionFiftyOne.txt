@@ -1,0 +1,9 @@
+Question 51
+
+The result will be
+
+1
+4
+9
+16
+25

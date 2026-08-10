@@ -1,0 +1,4 @@
+Question 19
+
+if you print a variable before assigning it a value it'll not compile
+The error will be a syntax error

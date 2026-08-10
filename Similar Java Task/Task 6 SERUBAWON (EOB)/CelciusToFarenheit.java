@@ -1,0 +1,18 @@
+/*
+1 collect input in celcius as a double
+2 convert celcius to farenheit using the formula (celcius * 9/5) + 32
+3 print the result in farenheit
+*/
+
+public class CelciusToFarenheit {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter temperature in Celsius: ");
+        double celsius = input.nextDouble();
+
+        double fahrenheit = (celsius * 9/5) + 32;
+
+        System.out.println("Temperature in Fahrenheit: " + fahrenheit);
+    }
+}

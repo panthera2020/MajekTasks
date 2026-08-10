@@ -1,0 +1,4 @@
+/* Question 49
+While loop is used to iterate statements you don't need to validate before running, Do while is used to iterate statements that should excecute before validating. 
+*/
+

@@ -1,0 +1,3 @@
+Question 66
+
+A loop variable counter states the initial value the loop starts counting from, if you forget to update it the loop doesn't start. 
