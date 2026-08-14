@@ -1,8 +1,5 @@
-import java.util.Scanner;
+public class MergerTwoSortedList {
 
-
-public class PrintDistinctNumbers {
-	
 	public static int [] sortArrayOf(int [] arrayOfNumbers){
         
         int store = 0;
@@ -20,31 +17,6 @@ public class PrintDistinctNumbers {
         
     return arrayOfNumbers;
     }
-    
-   
-   public static int countDuplicateNumbersIn(int [] arrayOfNumbers){
-       
-       int duplicateCounter = 0;
-       int theCount = 0;
-       int store = 0;
-       int [] sortArray = sortArrayOf(arrayOfNumbers);
-       
-       for(int count = 0; count < sortArray.length; count++){
-               duplicateCounter = 0;
-           for(int counter = 0; counter < sortArray.length; counter++){
-               if(sortArray[count] == sortArray[counter] && sortArray[count] != store){
-                   duplicateCounter++;
-               }
-           }
-           if(duplicateCounter > 1){
-               theCount++;
-               store = sortArray[count];
-           }
-               
-       }
-       
-   return theCount;
-   }
 
    public static int countDistinctNumbers(int [] arrayOfNumbers){
    		int duplicateCounter = 0;
@@ -98,23 +70,27 @@ public class PrintDistinctNumbers {
         }
     return newArray;
    }
-
-   public static void main(String... args){
-        Scanner input = new Scanner(System.in);
-        int [] arrayOfNumbers = new int[10];
-
-        System.out.println("Enter ten number: ");
-        for(int count = 0; count < arrayOfNumbers.length; count++){
-            arrayOfNumbers[count] = input.nextInt();
+    
+    public static int[] merge(int[] listOne, int[] listTwo){
+        int [] noDuplicateOne = arrayOfDistinctNumbersIn(listOne);
+        int [] noDuplicateTwo = arrayOfDistinctNumbersIn(listTwo);
+        
+        int [] newArray = new int[(noDuplicateOne.length) + (noDuplicateTwo.length)];
+        
+        int index = noDuplicateOne.length;
+        
+        for(int count = 0; count < noDuplicateOne.length; count++){
+            newArray[count] = noDuplicateOne[count];
         }
+        
+        for(int counter = 0; counter < noDuplicateTwo.length; counter++){
+            newArray[index] = noDuplicateTwo[counter];
+            index++;
+        }
+        
+        int [] sortedArray = sortArrayOf(newArray);
 
-    int [] distinctNumber = arrayOfDistinctNumbersIn(arrayOfNumbers);
-
-    System.out.println("The number of distinct number is " + countDistinctNumbers(arrayOfNumbers));
-    System.out.print("The distinct numbers are: ");
-
-    for(int count = 0; count < distinctNumber.length; count++){
-        System.out.print( distinctNumber[count] + " ");
+        
+    return sortedArray;
     }
-   }
 }
